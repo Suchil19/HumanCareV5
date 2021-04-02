@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--PWA-->
+   <link rel="manifest" href="./manifest.json"> 
+  <title>HumanCare</title>
+  <link rel="shortcut icon" type="image/png" href="./img/inicio/LogoHumanCare.png">
+  <!--BOOTSTRAP-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <!--LO AGREGUE PARA LOS ICONOS-->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+  <!--Carousel-->
+  <!--Owl2-->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" type="text/css">
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+
+</head>
+<body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+  <div id="preloader"></div>
+
+<nav class="main-nav">
+    <div class="nav-content">
+        <ul class="left-content">
+            
+            <li class="nav-item tuggle-btn">
+                <div class="tuggle-btn-content">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+        </ul>
+
+        <li class="nav-item">
+            <a class="nav-link logo" href="#header"></a>
+        </li>
+        <ul class="right-content">
+
+        <li style="display: none;" class="logged-out menu-item">
+            <a class="nav-link registration" href="#" data-toggle="modal" data-target="#signinModal"><i class="fas fa-user"></i>&nbsp;Ingresa | Regístrate</a>
+        </li>
+
+        <!--li style="display: none;" class="logged-out"><a href="#" data-toggle="modal" data-target="#signupModal"><i class="fas fa-clipboard"></i>&nbsp;Registrate</a></li-->
+            <li style="display: none;" class="menu-item logged-in"><a class="registration" href="./clinica/promociones/avisos.html"><i class="fas fa-bell"></i>&nbsp;Promociones</a></li>&nbsp;
+            <li style="display: none;" class="boton-salir logged-in"><a href="#" id="logout" onclick="noticias()"><i class="fas fa-sign-out-alt"></i>&nbsp;Salir</a></li>
+   
+        </ul>
+
+
+    </div>
+    <div class="tuggle-content">
+        <ul class="left-content">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#some-content-2">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./clinica/especialidades.html">Especialidades</a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#some-content-3">Servicios</a>
+            </li>
+            <!--li class="nav-item">
+                <a class="nav-link" href="#some-content-4">Únete</a>
+            </li-->
+            <li class="nav-item">
+              <a class="nav-link" href="#some-content-4">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+	<!--Comienza la seccion del home-->
+	<section class="home d-flex align-items-center">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-7">
+					<div class="home-text">
+						<h1>Human Care Lindavista</h1>
+						<p>
+							Clínica integral de alta especialidad
+						</p>
+						<div class="home-btn01">
+							<a href="#" class="btn01 btn-1">Conóceme</a>
+							<button type="button" class="btn01 btn-1 video-play-btn">
+								<i class="fas fa-play"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5 text-center">
+					<div class=" home-img">
+						<!--div class="circle">
+							
+						</div-->
+						<!--img src="img/inicio/LogoHumanCare.png"-->
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+<!--VIDEO-->
+  <section>
+		<div class="video-popup">
+			<div class="video-popup-inner">
+				<i class="fas fa-times video-popup-close"></i>
+				<div class="iframe-box">
+					<iframe id="player-1" src="https://www.youtube.com/embed/eLHv4EaDDX4" 
+					allow="accelerometer; autoplay; clipboard-write;  picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--TERMINA VIDEO-->
+
+<!--ASEGURADORAS-->
+
+<!--div class="container-slider">
+  <div class="slider1">
+    <div class="slide-track">
+      
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/humancare.png" alt="brand-number-one-1" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/bupa.png" alt="brand-number-one-1" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/mapfre.png" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/gnp.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/metlife.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/seguros-monterrey.png" height="100" width="250" alt="" />
+      </div>
+
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/humancare.png" alt="brand-number-one-1" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/bupa.png" alt="brand-number-one-1" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/mapfre.png" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/gnp.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/metlife.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/seguros-monterrey.png" height="100" width="250" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/inicio/aseguradoras/humancare.png" alt="brand-number-one-1" height="100" width="250" alt="" />
+      </div>
+      
+    </div>
+  </div>
+  
+<div-->
+
+
+<!--TEAM SECTION-->
+<section class="team section-padding" data-aos="zoom-in" data-aos-delay="250">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h2><span>Noticias</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="owl-carousel team-carousel">
+        <div class="team-item">
+          <img src="./img/inicio/contenido/urologia.png" alt="team">
+          <h3>Urología</h3>
+          <div class="line"></div>
+          <span>¿Problemas urinarios? que una infección no complique tu vida.
+          </span>
+          <!--AGREGUE EL BR PARA QUE EL CAROUSEL TUVIERA LA MISMA MEDIDA-->
+          <br>
+          <div class="home-btn">
+            <br>
+            <a href="#boton" class="btn01 btn-1">Conoce más</a>
+          </div>
+        </div>
+
+        <div class="team-item">
+          <img src="./img/inicio/contenido/parto.png" alt="team">
+          <h3>Parto y Cesárea</h3>
+          <div class="line"></div>
+          <span>¿Se acerca el momento mas bello de tu vida? vívelo con nosotros.
+          </span>
+          <!--AGREGUE EL BR PARA QUE EL CAROUSEL TUVIERA LA MISMA MEDIDA-->
+          <br>
+          <div class="home-btn">
+            <br>
+            <a href="#boton" class="btn01 btn-1">Conoce más</a>
+          </div>
+        </div>
+
+        <div class="team-item">
+          <img src="./img/inicio/contenido/HappyWoman.png" alt="team">
+          <h3>Ginecología</h3>
+          <div class="line"></div>
+          <span>Cuida tu salud íntima y acude periódicamente con tu ginecólogo.
+          </span>
+          <br>
+          <div class="home-btn">
+            <br>
+            <a href="#boton" class="btn01 btn-1">Conoce más</a>
+          </div>
+        </div>
+
+        <div class="team-item">
+          <img src="./img/inicio/contenido/doctores.png" alt="team">
+          <h3>Especialidades</h3>
+          <div class="line"></div>
+          <span>Mira todas las especialidades que ofrecemos en nuestra clínica.</span>
+          <br>
+          <div class="home-btn">
+            <br>
+
+            <a href="#boton" class="btn01 btn-1">Conoce más</a>
+          </div>
+        </div>
+        
+
+       
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--TEAM SECTION ENDS-->
+
+<!--Cuerpo de el inicio-->
+
+<div class="container1">
+
+<div class="cards">
+ 
+  <div class="card">
+    <div class="card_img card1">
+         
+    </div>
+    <h3>Parto y cesárea</h3>
+    <div class="line">
+    </div>
+    <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.  </p>
+
+
+      <a href="./clinica/especialidades.html" class="btn01 btn-1">Conoce más&nbsp;   <i class="fas fa-long-arrow-alt-right"></i></a>
+
+  </div>
+
+  <div class="card">
+    <div class="card_img card2">
+      <div class="plus"><p>+</p></div>
+    </div>
+    <h3>Servicios</h3>
+    <div class="line">
+    </div>
+   <p> Sed ut perspiciatis unde omnis iste natus error sit vol rem aperiam.</p>
+   <a href="./clinica/especialidades.html" class="btn01 btn-1">Conoce más&nbsp;   <i class="fas fa-long-arrow-alt-right"></i></a>
+  </div>
+  
+
+  <div class="card">
+    <div class="card_img card3">
+      <div class="plus"><p>+</p></div>
+    </div>
+    <h3>Covenios</h3>
+    <div class="line">
+    </div>
+    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    <a href="./clinica/especialidades.html" class="btn01 btn-1">Conoce más&nbsp;   <i class="fas fa-long-arrow-alt-right"></i></a>
+  </div>
+  <div class="card">
+    <div class="card_img card4">
+      <div class="plus"><i class="fas fa-heartbeat"></i></div>
+    </div>
+    <h3>¿Eres Médico?</h3>
+    <div class="line">
+    </div>
+    <p>¿Te interesaría trabajar con nosotros? Descubre como en esta sección</p>
+    <a href="./clinica/especialidades.html" class="btn01 btn-1">Conoce más&nbsp;   <i class="fas fa-long-arrow-alt-right"></i></a>
+
+    </div>
+  <div class="card">
+    <div class="card_img card5">
+      <div class="plus"><p>+</p></div>
+    </div>
+    <h3>Contactanos</h3>
+    <div class="line">
+    </div>
+   <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
+   <a href="./clinica/especialidades.html" class="btn01 btn-1">Conoce más&nbsp;   <i class="fas fa-long-arrow-alt-right"></i></a>
+  </div>
+  <div class="card">
+    <div class="card_img card6">
+      <div class="plus"><p>+</p></div>
+    </div>
+    <h3>Acerca de nosotros</h3>
+    <div class="line">
+    </div>
+    <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.  </p>
+    <a href="./clinica/especialidades.html" class="btn01 btn-1">Conoce más&nbsp;   <i class="fas fa-long-arrow-alt-right"></i></a>
+  </div>
+</div>
+
+</div>
+
+<!--Termina el cuerpo de  inicio-->
+
+<!--MAPA-->
+<br>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="section-title">
+        <h2><span>Visitanos</span></h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="map-responsive">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.266882731378!2d-99.13238188509244!3d19.
+48715038685331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9f79c2c6df3%3A0x6168de18751a1c5d!2s
+Humancare%20Clinic%20-%20Lindavista!5e0!3m2!1ses-419!2smx!4v1617313089600!5m2!1ses-419!2smx" 
+width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<!--Termina mapa-->
+
+
+<!-- REGISTRO FIREBASE -->
+              <!--MAIN CONTENT-->
+              <div class="container p-5" style="z-index:1">
+                <div class="row">
+                  <div class="col-md-6 offset-md-3">
+                    <ul class="list-group posts">
+              
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            
+                
+              
+              <!--BOOTSTRAP SCRIPTS-->
+              
+                <!-- Modal  SignUP-->
+                <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                      <h6 class="modal-title" id="exampleModalLabel">Registro:
+                        Contraseña con al menos 6 caracteres
+                      </h6>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                     </div>
+                     <div class="modal-body">
+                      <form id="signup-form">
+                        <div class="form-group">
+                           <input type="text" id="signup-email" class="form-control"
+                           placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                           <input type="password" id="signup-password" class="form-control"
+                           placeholder="Contraseña" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">SignUp</button>
+                      </form>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+               
+               
+               
+                <!-- Modal  SignIn-->
+                <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                      <h6 class="modal-title" id="exampleModalLabel">Ingresa con tu correo de Gmail a nuestra plataforma y mantente informado sobre
+                        promociones y avisos importantes
+                      </h6>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                     </div>
+                     <div class="modal-body">
+                        
+                      <form id="login-form">
+                         
+                        <!--div class="form-group">
+                           <input type="text" id="login-email" class="form-control"
+                           placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                           <input type="password" id="login-password" class="form-control"
+                           placeholder="Contraseña" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-info btn-block">Ingresa</button-->
+                        
+                        <button type="button" class="btn btn-success btn-block black-background white" id="googleLogin"><i class="fab fa-google" aria-hidden="true"></i>&nbsp;Ingresa o Regístrate con Gmail</button>
+                        <!--button type="submit" class="btn btn-primary btn-block" id="facebookLogin"><i class="fab fa-facebook"></i>&nbsp;Ingresa o Regístrate con Facebook</button-->
+                      </form>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+
+
+                <!-- Top scroll-->
+              <a href="#" class="scrollTopTop"><i class="fas fa-angle-up"></i></a>
+
+                <section id="footer" class="contact-area" id="contact">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6 offset-lg-3">
+                              <div class="contact-content text-center">
+                                  <a href="#"><img src="./img/inicio/LogoFooterBlanco.png" alt="logo"></a>
+                                  <p>Riobamba #642, Col. Lindavista,
+                                    Alcaldía. Gustavo A. Madero, CP. 07300, CDMX</p>
+                                  <div class="hr"></div>
+                                  <h6>Dudas, comentarios, información, citas...</h6>
+                                  <h6>55 8374 3064<span>|</span>55 4431 1744</h6>
+                                  <div class="contact-social">
+                                    <ul>
+                                      <li><a class="hover-target" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                      <li><a class="hover-target" href=""><i class="fas fa-map-marker-alt"></i></a></li>
+                                      <li><a class="hover-target" href=""><i class="fab fa-twitter"></i></a></li>
+                                      <li><a class="hover-target" href=""><i class="fab fa-whatsapp"></i></a></li>
+                                      <!--li><a class="hover-target" href=""><i class="fab fa-pinterest-p"></i></a></li-->
+                                    </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+              <!-- =============== 1.9 Contact Area End ====================-->
+              <!-- =============== 1.9 Footer Area Start ====================-->
+              <footer>
+                  <p>Proyect &copy; By <img src="./img/inicio/PreWolf.png" alt="logo">Vita Solutions</p>
+              </footer>
+            
+            
+                <!--FIREBASE SCRIPTS-->
+                <!-- The core Firebase JS SDK is always required and must be listed first -->
+                <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+            
+              <!-- TODO: Add SDKs for Firebase products that you want to use
+                  https://firebase.google.com/docs/web/setup#available-libraries -->
+              <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+              <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+              <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+              
+                <script>
+                   // Your web app's Firebase configuration
+                   var firebaseConfig = {
+                apiKey: "AIzaSyD9lnm2-ZB8-L1VYovDD-rIF5jXu8EdTzw",
+                authDomain: "human-care-clinic.firebaseapp.com",
+                projectId: "human-care-clinic",
+                storageBucket: "human-care-clinic.appspot.com",
+                messagingSenderId: "615242911884",
+                appId: "1:615242911884:web:3df2a51c271eeea80baba9",
+                measurementId: "G-BEJYVEMDQX"
+              };
+            
+                  // Initialize Firebase
+                  firebase.initializeApp(firebaseConfig);
+                  const auth = firebase.auth();
+                  // FireStore base de datos
+                  const fs = firebase.firestore();
+                </script>
+                <!--TERMINA FIREBASE-->
+
+     <!-- PWA -->
+     <script src="./script.js"></script>
+
+
+     <!--Registro-->
+     <script src="./registro.js"></script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script  src="./js/script.js"></script>
+  <!-- partial>
+  <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<!-- AOS Script-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!--Carousel-->
+<script  src="./js/owl.carousel.min.js"></script>
+
+</body>
+</html>
